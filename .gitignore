@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# temporary files
+*.tmp
+*.log
+
+# python cache
+__pycache__/
+*.pyc
+
+# generated videos
+*.mp4
+
+# generated outputs
+outputs/videos/
+outputs/validation_videos/
+
+# archived datasets
+archive_experimental/aurora_v2_validation/data/
+archive_experimental/aurora_v6/data/
+
+# local inventory
+aurora_file_inventory.txt
