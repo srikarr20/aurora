@@ -5,18 +5,20 @@
 *.tmp
 *.log
 
-# large datasets
-aurora_v2_validation/data/
-aurora_v6/data/
-
-# generated outputs
-*/outputs/final_batch/
-*/outputs/videos/
-*.mp4
-
 # python cache
 __pycache__/
 *.pyc
+
+# generated videos
+*.mp4
+
+# generated outputs
+outputs/videos/
+outputs/validation_videos/
+
+# archived datasets
+archive_experimental/aurora_v2_validation/data/
+archive_experimental/aurora_v6/data/
 
 # local inventory
 aurora_file_inventory.txt
