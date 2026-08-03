@@ -22,3 +22,7 @@ archive_experimental/aurora_v6/data/
 
 # local inventory
 aurora_file_inventory.txt
+*.nii
+*.nii.gz
+*.npz
+*.npy
