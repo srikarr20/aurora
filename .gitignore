@@ -26,3 +26,6 @@ aurora_file_inventory.txt
 *.nii.gz
 *.npz
 *.npy
+
+# External clinical imaging data — obtain from original dataset source
+examples/**/*.nii.gz

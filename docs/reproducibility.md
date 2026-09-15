@@ -62,22 +62,75 @@ These represent the stabilized detector evolution hierarchy used for validation.
 
 ---
 
-# 4. Validation Dataset Structure
+# 4. Validation Dataset and Provenance
 
-Validation examples are organized into:
+Canonical cardiac examples originate from the Automated Cardiac Diagnosis
+Challenge (ACDC) dataset.
+
+Required ACDC citation:
+
+O. Bernard, A. Lalande, C. Zotti, F. Cervenansky, et al.,
+"Deep Learning Techniques for Automatic MRI Cardiac Multi-structures
+Segmentation and Diagnosis: Is the Problem Solved?",
+IEEE Transactions on Medical Imaging, vol. 37, no. 11,
+pp. 2514-2525, Nov. 2018.
+
+DOI: 10.1109/TMI.2018.2837502
+
+The ACDC distribution used during development states that the dataset is
+provided under CC BY-NC-SA 4.0 and subject to its supplied non-commercial
+scientific-research terms.
+
+The active AURORA repository does not require redistribution of the source
+clinical imaging files. Obtain ACDC separately under its original terms.
+
+For canonical figure reproduction, place the required files at:
 
 ```text
 examples/
 ├── stable/
+│   └── patient029_4d.nii.gz
 ├── irregular/
+│   └── patient094_4d.nii.gz
 └── low_contraction/
+    └── patient008_4d.nii.gz
 ```
 
-Each folder contains representative cine MRI sequences in NIfTI format:
+Representative cases:
 
-```text
-*_4d.nii.gz
-```
+| AURORA descriptor | ACDC case | ACDC group |
+|---|---|---|
+| Stable | patient029 | HCM |
+| Irregular | patient094 | RV |
+| Low Contraction | patient008 | DCM |
+
+The AURORA descriptors are phenomenological dynamical labels. They are not
+ACDC diagnostic labels and are not clinically validated disease classes.
+
+The representative cases can be traced to an earlier exploratory AURORA
+Motion Strength Index (MSI) workflow:
+
+| ACDC case | Archived MSI | Exploratory label |
+|---|---:|---|
+| patient008 | 0.2752293578 | LOW_CONTRACTION |
+| patient029 | 0.4049756304 | NORMAL |
+| patient094 | 0.4772727273 | HIGH_MOTION |
+
+The historical MSI thresholds were exploratory engineering heuristics and
+were not clinically calibrated diagnostic cut-offs.
+
+The later canonical terminology:
+
+- LOW_CONTRACTION -> Low Contraction
+- NORMAL -> Stable
+- HIGH_MOTION -> Irregular
+
+is a descriptive presentation mapping for representative dynamical behavior,
+not a validated clinical classification mapping.
+
+For complete provenance and evidence boundaries, see:
+
+`docs/scientific-integrity/DATA_PROVENANCE.md`
 
 ---
 
@@ -156,7 +209,7 @@ Validation analysis focuses on:
 
 * observable synchronization,
 * manifold geometry,
-* topology persistence,
+* relational coupling structure,
 * oscillatory structure,
 * dynamical coupling,
 * and differential regime morphology.
