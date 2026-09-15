@@ -1,5 +1,22 @@
 # AURORA
 
+<p align="center">
+  <img src="docs/media/aurora_comparison_preview.gif" alt="AURORA cardiac cine MRI comparison" width="900">
+</p>
+
+<p align="center">
+  <a href="docs/media/aurora_comparison_clean.mp4"><strong>Watch full comparison video</strong></a>
+</p>
+
+<p align="center">
+  <sub>
+    Research visualization derived from the ACDC cine MRI examples used in this study.
+    ACDC source data is not redistributed as NIfTI files in the active repository.
+    See <a href="docs/scientific-integrity/DATA_PROVENANCE.md">data provenance and licensing</a>.
+  </sub>
+</p>
+
+
 ## Detector-Plane Dynamical Observability Framework for Spatiotemporal Signal Fields
 
 AURORA is a detector-plane dynamical observability framework that transforms spatiotemporal signal evolution into low-dimensional observable manifolds.
