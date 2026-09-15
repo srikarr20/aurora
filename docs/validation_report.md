@@ -99,7 +99,7 @@ Rather than producing segmentation masks or diagnostic labels, AURORA analyzes:
 - observable synchronization,
 - manifold geometry,
 - trajectory coherence,
-- topology persistence,
+- relational coupling structure,
 - oscillatory organization,
 - and regime-dependent dynamical structure.
 
@@ -117,7 +117,7 @@ Initial detectors accumulated temporal displacement fields to identify persisten
 
 Focus:
 - motion persistence,
-- detector accumulation topology.
+- detector accumulation structure.
 
 ---
 
@@ -141,34 +141,55 @@ Focus:
 
 ---
 
-## 3.4 Phase-Aware Detector
+## 3.4 Phase-Aware Detector (historical name)
 
-Signed temporal operators introduced directional temporal structure.
+This detector generation introduced an FFT-derived spectral concentration
+measure. The implementation uses the magnitude spectrum rather than formal
+Fourier-phase, Hilbert-phase, or phase-locking analysis.
 
 Focus:
-- phase consistency,
+
+- dominant spectral concentration,
 - oscillatory organization.
 
 ---
 
 ## 3.5 Optical Flow Detector
 
-Vector-field dynamics were introduced using optical flow observability.
+Vector-field dynamics were introduced using Farneback dense optical flow.
 
 Focus:
+
 - directional coherence,
 - vector dynamics.
 
+Methodological reference:
+
+G. Farneback,
+"Two-Frame Motion Estimation Based on Polynomial Expansion,"
+SCIA 2003, Lecture Notes in Computer Science, vol. 2749,
+pp. 363-370.
+
+DOI: 10.1007/3-540-45103-X_50
+
 ---
 
-## 3.6 Topology-Aware Detector
+## 3.6 Topology-Aware Detector (historical name)
 
-Topology-aware observables introduced coupling and divergence-sensitive metrics.
+This detector generation introduced inter-regional coupling and
+flow-divergence-sensitive metrics on the Farneback optical-flow field.
+
+The implementation does not compute persistent homology, persistence diagrams,
+Betti numbers, simplicial complexes, or other formal topological-data-analysis
+objects.
+
+The historical filename is retained for reproducibility.
 
 Focus:
+
 - relational dynamics,
-- topology persistence,
-- coherent coupling structure.
+- inter-regional coupling,
+- flow-divergence structure.
 
 ---
 
@@ -182,14 +203,14 @@ Instead, the objective was to determine whether detector-conditioned observables
 
 - coherent low-dimensional manifolds,
 - interpretable dynamical trajectories,
-- topology-sensitive regime differentiation,
+- relational-coupling and flow-structure regime differentiation,
 - and phenomenologically meaningful observable evolution.
 
 ---
 
 ## 4.2 Validation Dataset
 
-Validation experiments used cine MRI datasets containing multiple cardiac dynamical regimes including:
+Canonical visualization used representative ACDC cine MRI cases assigned AURORA phenomenological descriptors:
 
 - stable dynamics,
 - irregular dynamics,
@@ -215,7 +236,7 @@ No segmentation or supervised learning was used.
 Validation visualizations included:
 
 - detector activity evolution,
-- accumulation topology,
+- accumulation structure,
 - observable evolution,
 - and state-space trajectories.
 
@@ -235,7 +256,7 @@ These visualizations were analyzed phenomenologically to determine whether coher
 Differential regime comparison across stable, irregular, and low-contraction dynamical states.
 
 Top row:
-Detector accumulation topology derived from temporal detector activity.
+Detector accumulation structure derived from temporal detector activity.
 
 Middle row:
 Normalized observable evolution for coherence (C), instability sensitivity (K), and detector energy (E).
@@ -265,7 +286,7 @@ The stable regime demonstrated:
 - synchronized observable evolution,
 - coherent damped oscillation,
 - smooth manifold trajectories,
-- persistent topology,
+- persistent accumulation structure,
 - and strong observable coupling.
 
 The resulting state-space geometry formed an extended coherent manifold.
@@ -279,7 +300,7 @@ The irregular regime demonstrated:
 - fragmented trajectory geometry,
 - abrupt manifold transitions,
 - observable desynchronization,
-- topology distortion,
+- distorted relational and flow structure,
 - and unstable dynamical evolution.
 
 The resulting trajectories exhibited angular fragmented geometry.
@@ -322,7 +343,7 @@ Across validation experiments, the framework consistently demonstrated:
 - low-dimensional manifold emergence,
 - observable synchronization,
 - bounded instability,
-- topology persistence,
+- relational coupling structure,
 - and regime-dependent manifold geometry.
 
 Distinct dynamical regimes produced visibly distinct manifold structures while preserving coherent observable evolution.
