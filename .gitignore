@@ -22,6 +22,13 @@ archive_experimental/aurora_v6/data/
 
 # local inventory
 aurora_file_inventory.txt
+<<<<<<< HEAD
+=======
+*.nii
+*.nii.gz
+*.npz
+*.npy
+>>>>>>> af37f8e (docs: establish AURORA scientific provenance and data boundaries)
 
 # External clinical imaging data — obtain from original dataset source
 examples/**/*.nii.gz
