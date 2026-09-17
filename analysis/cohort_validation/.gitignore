@@ -1,0 +1,10 @@
+# Generated analysis artifacts
+*.csv
+*.png
+*.pdf
+*.npz
+*.npy
+
+# Python cache
+__pycache__/
+*.pyc

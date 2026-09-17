@@ -1,27 +1,51 @@
-# macOS
+# macOS / editor
 .DS_Store
 
-# temporary files
-*.tmp
-*.log
-
-# python cache
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
 
-# generated videos
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Logs / temp
+*.log
+tmp/
+temp/
+
+# Generated videos
 *.mp4
 
-# generated outputs
-outputs/videos/
-outputs/validation_videos/
+# Medical / imaging data
+*.nii
+*.nii.gz
+*.dcm
+*.dicom
 
-# archived datasets
-archive_experimental/aurora_v2_validation/data/
-archive_experimental/aurora_v6/data/
+# Numerical arrays / generated analysis data
+*.npz
+*.npy
 
-# local inventory
-aurora_file_inventory.txt
+# Archived/local datasets
+data/
+datasets/
+archive_data/
+archived_data/
 
-# External clinical imaging data — obtain from original dataset source
+# Example raw imaging data
+examples/**/*.nii
 examples/**/*.nii.gz
+examples/**/*.dcm
+
+# Local analysis outputs
+analysis/cohort_validation/*.csv
+analysis/cohort_validation/*.png
+analysis/cohort_validation/*.pdf
+analysis/cohort_validation/*.npz
+analysis/cohort_validation/*.npy
+analysis/cohort_validation/__pycache__/
